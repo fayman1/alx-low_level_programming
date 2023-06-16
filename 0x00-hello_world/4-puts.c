@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Description:Print to stdout 
+ * Description: prints out to stdout  "Programming is like building a multilingual puzzle"
  *
  * Return: Always 0 (Success)
  */
