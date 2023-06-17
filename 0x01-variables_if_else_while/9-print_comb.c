@@ -14,13 +14,13 @@ int main(void)
 
 	int x;
 
-	for (x = 20; x < 30; x++)
+	for (x = 48; x < 58; x++)
 		putchar((x % 10) + '0');
 
 	{
 
 
-	if (x != 28)
+	if (x != 57)
 
 	{
 
