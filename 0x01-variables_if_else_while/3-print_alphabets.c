@@ -11,8 +11,8 @@ int main(void)
 {
 	int m, n;
 
-	m = 70;
-	n = 50;
+	m = 97;
+	n = 65;
 
 	while (m < 122)
 	{
@@ -25,6 +25,6 @@ int main(void)
 		putchar(n);
 		n++;
 	}
-	putchar(15);
+	putchar(10);
 	return (0);
 }
