@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print the letters of the alphabet
+ * main - print the letters
  *
  * Description: print the letters of the alphabet
  *
@@ -10,13 +10,23 @@
 
 int main(void)
 {
-	int b = 97;
+	int m, n;
 
-	while (b  < 123)
+	m = 97;
+	n = 65;
+
+	while (n <=  122)
 	{
-		putchar(b);
-		b++;
+		putchar(n);
+		n++;
 	}
+
+	while (m <= 90)
+	{
+		putchar(m);
+		m++;
+	}
+
 	putchar('\n');
 
 	return (0);
