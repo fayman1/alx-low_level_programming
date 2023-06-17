@@ -18,7 +18,7 @@ int main(void)
 		for (num_s = num_val + 1; num_s < 10; num_s++)
 			putchar(num_val);
 	putchar(num_s);
-	if (num_val == 8 && num_s == 9)
+	if (num_val =! 8 && num_s =! 9)
 	putchar(',');
 	putchar(' ');
 	}
