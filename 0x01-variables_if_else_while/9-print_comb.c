@@ -15,6 +15,7 @@ int main(void)
 	int x;
 
 	for (x = 20; x < 30; x++)
+		putchar((x % 10) + '0');
 
 	{
 
