@@ -9,15 +9,31 @@
 */
 
 int main(void)
+
 {
-	int val;
+
+	int x;
+
+	for (x = 20; x < 30; x++)
+
 	{
-		for (val = 0; val <= 9; val++)
-			putchar((val % 10) + '0');
-		if (val == 9)
-			putchar(',');
-		        putchar(' ');
+
+		putchar(x);
+
+	if (x != 28)
+
+	{
+
+		putchar(',');
+
+		putchar(' ');
+
 	}
-	putchar('\n');
+
+	}
+
+		putchar('\n');
+
 	return (0);
+
 }
