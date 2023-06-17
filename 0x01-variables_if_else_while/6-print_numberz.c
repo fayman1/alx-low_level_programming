@@ -12,7 +12,7 @@ int main(void)
 	int val_digit;
 
 	for (val_digit = 0; val_digit < 10; val_digit++)
-		putchar((val_digit % 10) + '0');
-	printf("\n");
+		putchar ((val_digit % 10) + '0');
+	putchar('\n');
 	return (0);
 }
