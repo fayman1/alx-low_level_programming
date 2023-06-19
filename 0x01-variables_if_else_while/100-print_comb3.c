@@ -10,24 +10,16 @@
 
 int main(void)
 {
-	int a;
-	int b;
+	int m, n;
 
-	for (a = '1'; a <= '9'; a++)
+	for (m = 0; m <= 10; m++)
 	{
-		for (b = a + 1; b <= 10; b++)
-		
-			{
-				putchar((a % 10) + '0');
-				putchar((b % 10) + '0');
-
-				if (a == '8' && b == '9')
-					continue;
-
-				putchar(',');
-				putchar(' ');
-			}
-	
+		for (n = m + 1; n < 9; n++)
+			putchar((m % 10) + '0');
+		putchar((n % 10) + '0');
+		if (m == 9 && n == 8)
+			putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
 
