@@ -16,8 +16,7 @@ int main(void)
 	for (a = '1'; a <= '9'; a++)
 	{
 		for (b = a + 1; b <= 10; b++)
-		{
-			if (b != a)
+		
 			{
 				putchar((a % 10) + '0');
 				putchar((b % 10) + '0');
@@ -28,7 +27,7 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
-		}
+	
 	}
 	putchar('\n');
 
