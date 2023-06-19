@@ -8,24 +8,21 @@
  * Return: 0 (success)
 */
 
+
 int main(void)
 {
 	int m = 1;
 	int n = 9;
-
+	
 	for (m = 0; m <= 9; m++)
+		putchar(m + '0');
+	for (n = m + 1; n <= 9; n++)
 	{
-		for (n = m + 1; n <= 10; n++)
-			putchar((m % 10) + '0');
-		putchar((n % 10) + '0');
-		if (m == 8 && n == 9)
-		continue;
-
-
-			putchar(',');
+		putchar(n + '0');
+		putchar(',');
 		putchar(' ');
 	}
 	putchar('\n');
-
 	return (0);
 }
+
