@@ -11,13 +11,14 @@ int main(void)
 	int o = 1, p = 2, val = 0;
 	int a;
 
-	if (p < 4000000)
+	while (p < 4000000)
 	{
-		while (p % 2 == 0)
+		if (p % 2 == 0)
 			val += p;
-		o = a;
+		
 		a = p;
 		p += o;
+		o = a;
 	}
 	printf("%d\n", val);
 	return (0);
