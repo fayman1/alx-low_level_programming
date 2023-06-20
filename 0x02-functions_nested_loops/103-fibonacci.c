@@ -15,7 +15,6 @@ int main(void)
 	{
 		if (p % 2 == 0)
 			val += p;
-		
 		a = p;
 		p += o;
 		o = a;
