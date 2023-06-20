@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	int a;
 	int o = 1, p = 2, val = 0;
+	int a;
 
 	if (p < 4000000)
 	{
