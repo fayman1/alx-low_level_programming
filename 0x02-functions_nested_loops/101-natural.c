@@ -14,7 +14,7 @@ int main(void)
 
 	for (sum1 = 0; sum1 < 1024; sum1++)
 	{
-		if ((sum1 % 6 == 0) || (sum1 % 9 == 0))
+		if ((sum1 % 3 == 0) || (sum1 % 5 == 0))
 		{
 			sum2 += sum1;
 		}
