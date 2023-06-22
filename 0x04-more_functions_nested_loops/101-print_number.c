@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_number - Prints an integer
@@ -9,16 +8,20 @@
 
 void print_number(int n)
 {
-	unsigned int val = n;
-	/* code*/
+	unsigned int a;
+
 	if (n < 0)
 	{
+		a = -n;
 		_putchar('-');
-		val = -val;
 	}
-	if ((val / 10) > 0)
+	else
 	{
-		print_number(val / 10);
-		_putchar((val % 10) + 48);
+		a = n;
 	}
+	if (a / 10)
+	{
+		print_number(a / 10);
+	}
+	_putchar((a % 10) + '0');
 }
