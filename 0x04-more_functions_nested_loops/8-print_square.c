@@ -5,20 +5,19 @@
  * @size: square size
  */
 
-
-void print_diagonal(int n)
+void print_square(int size)
 {
-	int a, b;
+	int i, j;
 
-	if (n <= 0)
+	if (size <= 0)
 		_putchar('\n');
-	for (a = 0; a < n; a++)
+
+	for (i = 0; i < size; i++)
 	{
-		for (b = 0; b < i; b++)
+		for (j = 0; j < (size); j++)
 		{
-			_putchar(' ');
+			_putchar('#');
 		}
-		_putchar('\\');
 		_putchar('\n');
 	}
 
