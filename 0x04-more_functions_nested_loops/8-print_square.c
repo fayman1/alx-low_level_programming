@@ -5,14 +5,21 @@
  * @size: square size
  */
 
-void print_square(int size)
-{
-	int rec, cir;
 
-	for (rec = 1; rec <= size; rec++)
+void print_diagonal(int n)
+{
+	int a, b;
+
+	if (n <= 0)
+		_putchar('\n');
+	for (a = 0; a < n; a++)
 	{
-		for (cir = 1; cir <= size; cir++)
-			_putchar('#');
+		for (b = 0; b < i; b++)
+		{
+			_putchar(' ');
+		}
+		_putchar('\\');
 		_putchar('\n');
 	}
+
 }
