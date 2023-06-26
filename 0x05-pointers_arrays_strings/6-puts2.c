@@ -7,18 +7,20 @@
  *
  * Return: Nothing
  */
+
 void puts2(char *str)
 {
-	int m = 0;
+	int a;
+	int b = 0;
 
-	do {
-		if (m % 2 == 0)
-		{
-			_putchar(str[m]);
-		}
-		m++;
-	} while (str[m] != '\0');
+	while (str[b] != '\0')
+	{
+		b++;
+	}
+	for (a = 0; a < b; a += 2)
+	{
+		_putchar(str[a]);
+	}
 	_putchar('\n');
-	return (0);
 }
 
