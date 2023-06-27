@@ -13,7 +13,9 @@ int _atoi(char *s)
 
 	while (*s != '\0')
 	{
-		if (*s == '-')
+		if (*s == '+')
+			val = 1;
+		else if (*s == '-')
 			val = -1;
 		else if (*s >= '0' && *s <= '9')
 			num = (num * 10) + (*s - '0');
@@ -23,4 +25,3 @@ int _atoi(char *s)
 	}
 	return (num * val);
 }
-
