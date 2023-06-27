@@ -8,20 +8,17 @@
 
 int _atoi(char *s)
 {
-	int num = 0;
-	int val = 1;
+	unsigned int num = 0;
+	int si = 1;
 
-	while (*s != '\0')
-	{
-		if (*s == '+')
-			val = 1;
-		else if (*s == '-')
-			val = -1;
+	do {
+		if (*s == '-')
+			si *= -1;
 		else if (*s >= '0' && *s <= '9')
 			num = (num * 10) + (*s - '0');
 		else if (num > 0)
 			break;
-		s++;
-	}
-	return (num * val);
+	} while (*s++);
+
+	return (num * si);
 }
