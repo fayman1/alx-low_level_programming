@@ -9,3 +9,5 @@
 | 3. 0x02.C C Functions, nested loops                  |  Nested loops, prototypes, scope of variables, headerfiles and gcc|
 | 4. 0x03.C Debugging                                  |  Reading error message, methods of debugging manually|
 | 5. 0x04.C more_functions_nested_loop                 |  Difference between a declaration and a function|
+| 6. 0x05.C Pointers, Arrays and Strings               | How to use string and manipulate them, use pointers and arrays|
+| 7. 0x06.C More pointers, arrays and strings          |  How to use pointer and arrays and difference betweeen them|
