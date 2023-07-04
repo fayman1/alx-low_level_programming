@@ -11,3 +11,4 @@
 | 5. 0x04.C more_functions_nested_loop                 |  Difference between a declaration and a function|
 | 6. 0x05.C Pointers, Arrays and Strings               | How to use string and manipulate them, use pointers and arrays|
 | 7. 0x06.C More pointers, arrays and strings          |  How to use pointer and arrays and difference betweeen them|
+| 8. 0x07. C - Even more pointers, arrays and strings  | What are multidimensional arrays and how to use them|
