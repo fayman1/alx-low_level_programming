@@ -9,38 +9,46 @@
  *
  * Return: pointer of an array of chars
  */
+
 char *str_concat(char *s1, char *s2)
 {
-	char *strout;
-	unsigned int i, j;
+	char *con;
+	int i, j;
 
-	if (s1 == 0)
+	if (s1 == NULL)
 		s1 = "";
-	if (s2 == 0)
+	if (s2 == NULL)
 		s2 = "";
 
-	strout = malloc(sizeof(char) * (strlen(s1) + strlen(s2) + 1));
+	i = j = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (s2[j] != '\0')
+		j++;
+	con = malloc(sizeof(char) * (i + j + 1));
 
-	if (strout == 0)
+	if (con == NULL)
+		return (NULL);
+	i = j = 0;
+	while (s1[i] != '\0')
 	{
-		free(strout);
-		return (0);
+		con[i] = s1[i];
+		i++;
 	}
 
-	i = 0;
-	do {
-		strout[i] = s1[i];
-		i++;
-	} while (s1[i] != '\0');
-
-	j = 0;
-	do {
-		strout[i + j] = s2[j];
-		j++;
-	} while (s2[j] != '\0');
-
-	strout[i + j] = '\0';
-
-	return (strout);
+	while (s2[j] != '\0')
+	{
+		con[i] = s2[j];
+		i++, j++;
+	}
+	con[i] = '\0';
+	return (con);
 }
+
+
+
+
+
+
+
 
