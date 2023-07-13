@@ -13,20 +13,21 @@
 
 int *array_range(int min, int max)
 {
-int *r;
-int i;
+	int *r;
+	int i;
 
-r = malloc(sizeof(*r) * ((max - min) + 1));
+	r = malloc(sizeof(*r) * ((max - min) + 1));
 
-if (r == 0)
-return (0);
+	if (r == 0)
+		return (0);
 
-i = 0;
-do {
-r[i] = min;
-i++;
-min++;
-} while (min <= max);
-return (r);
+	i = 0;
+
+	do {
+		r[i] = min;
+		i++;
+		min++;
+	} while (min <= max);
+	return (r);
 }
 
